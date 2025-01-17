@@ -92,13 +92,9 @@ header {
 	left: 0;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 600px) {
 	.header-navigation a {
 		display: inline-block;
-	}
-
-	.header-navigation button {
-		display: none;
 	}
 }
 
