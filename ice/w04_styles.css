@@ -30,6 +30,10 @@ main {
     color: white;
 }
 
+#list {
+    font-weight: bold;
+}
+
 #russel-m-nelson {
     max-width: 200px;
 }
