@@ -1,0 +1,24 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+#header_img {
+    display: block;
+    width: 100%;
+}
+
+#image_row {
+    height: 100%;
+    text-align: center;
+    background-color: #737373;
+}
+
+#image_row img {
+    max-width: 18vw;
+    max-height: auto;
+    border-radius: 50%;
+    border: 1vw solid #444444;
+    margin: 1.5vw 5vw 1.5vw 5vw
+}
+
