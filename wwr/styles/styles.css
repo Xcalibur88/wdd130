@@ -1,6 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --primary-color: #436436;
+    --secondary-color: #6D3D14;
+    --accent1-color: #2E294E;
+    --accent2-color: #E59500;
+    --accent3-color: white;
+
+    --heading-font: Oswald, Verdana, sans-serif;
+    --paragraph-font: Roboto, Lato, Helvetica, sans-serif;
+}
+
 body {
     margin: 0;
-    background-color: #fcfbfb; 
+    background-color: #fcfcfc; 
+    font-family: var(--paragraph-font);
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    margin: 0;
 }
 
 #content {
@@ -9,26 +31,38 @@ body {
 }
 
 header, footer {
-    background-color: #436436
+    background-color: var(--primary-color);
+    padding: 25px 50px;
 }
 
-header {
-    background-color :#436436
+#logo_link {
+    padding-top: 5px;
 }
 
 .logo, .icon {
     width: 80px;
 }
 
+.icon {
+    padding-top: 10px;
+}
+
+.home-title {
+    font-family: var(--heading-font);
+    font-size: 2em;
+    margin-top: 10px;
+}
+
 nav a {
     color: white;
     text-align: center;
     text-decoration: none;
+    padding: 35px;
 }
 
 nav a:hover {
     color: black;
-    background-color: #E59500;
+    background-color: var(--accent2-color);
 }
 
 .home-title, h4 {
@@ -43,33 +77,64 @@ nav a:hover {
     width: 100%;
 }
 
+.msg h2 {
+    font-family: var(--heading-font);
+}
+
 .button-box {
     text-align: center;
 }
 
 .book, .join {
     color: white;
-    background-color: #6D3D14;
+    background-color: var(--secondary-color);
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 
 .book:hover, .join:hover {
     color: black;
-    background-color: #E59500;
+    background-color: var(--accent2-color);
+}
+
+.card-img {
+    border: 10px solid var(--accent1-color);
+}
+
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
 }
 
 main section {
     text-align: center;
 }
 
+main section img {
+    box-sizing: border-box;
+}
+
 #background {
-    background-color: #436436;
+    background-color: var(--primary-color);
     height: 725px;
 }
 
 .msg {
     color: white;
-    background-color: #436436;
+    background-color: var(--primary-color);
+    line-height: 1.5em;
+    padding: 35px;
+}
+
+.msg p {
+    font-size: .8em;
+    padding-bottom: 15px;
+}
+
+footer {
+    margin-top: 200px;
 }
 
 footer p {
@@ -84,6 +149,10 @@ footer a {
 
 footer p a:hover {
     color: black;
-    background-color: #E59500;
+    background-color: var(--accent2-color);;
     text-decoration: underline;
+}
+
+footer .social img {
+    padding-top: 15px;
 }

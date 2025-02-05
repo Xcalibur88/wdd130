@@ -1,0 +1,15 @@
+body {
+    margin: 0
+}
+
+header {
+    background-color: #006eb6;
+    padding: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    padding: 25px;
+}

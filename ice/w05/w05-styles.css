@@ -5,7 +5,9 @@ html, body {
 
 #header_img {
     display: block;
+    margin: 0 auto;
     width: 100%;
+    max-width: 3200px;
 }
 
 #image_row {
@@ -19,6 +21,6 @@ html, body {
     max-height: auto;
     border-radius: 50%;
     border: 1vw solid #444444;
-    margin: 1.5vw 5vw 1.5vw 5vw
+    margin: 1.5vh 5vw 1.5vh 5vw
 }
 
