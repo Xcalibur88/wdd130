@@ -192,7 +192,7 @@ main section img {
 
 .msg {
     color: white;
-    background-color: var(--primary-color);
+    background-color: var(--accent1-color);
     line-height: 1.5em;
     padding: 35px;
     grid-column: 6/10;
