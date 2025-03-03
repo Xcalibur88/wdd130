@@ -35,6 +35,7 @@ body {
 }
 
 .portrait-bottom {
+    font-family: serif;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     color: white;
@@ -46,6 +47,7 @@ body {
 }
 .portrait-bottom p {
     margin-top: 0;
+    font-size: 0.8em;
 }
 .portrait-bottom sup {
     font-size: .7em
