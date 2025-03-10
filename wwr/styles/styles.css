@@ -480,9 +480,67 @@ ol, li {
 
 
 /*
+ CONTACT US PAGE
+*/
+#contact-us-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+
+form {
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin-top: 20px;
+}
+
+input,
+textarea {
+    font: 1em sans-serif;
+    width: 400px;
+    box-sizing: border-box;
+    border: 1px solid #999;
+}
+
+textarea {
+    height: 5em;
+}
+
+#feedback {
+    background-color: antiquewhite;
+    padding: .5em;
+    display: none; 
+}
+
+button[type='submit'] {
+    background-color: var(--secondary-color);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 50px;
+    width: 100%;
+}
+
+
+/*
 MEDIA QUERIES
 */
 @media screen and (max-width: 900px) {
+    #home-header {
+        background-color: var(--primary-color);
+    }
     #hero, .home-grid {
         display: block;
         height: auto;
@@ -570,6 +628,11 @@ MEDIA QUERIES
         padding-bottom: 80px;
         grid-column: 2;
         grid-row: 4;
+    }
+
+    /*CONTACT US PAGE*/
+    #contact-us-content {
+        margin-top: -10px;
     }
 }
 
