@@ -1,0 +1,26 @@
+body {
+    color: white;
+    background-image: url('../images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#logo {
+    max-width: 80px;
+}
+
+#profile-picture {
+    max-width: 400px;
+}
+
+.icon {
+    max-width: 50px;
+    background-color: white;
+    border: 15px solid white;
+    border-radius: 30%;
+}
+
+.timeline-item > img {
+    max-width: 80px;
+}
+
