@@ -215,14 +215,19 @@ button {
     color: var(--primary-color);
     margin-left: 20px;
 }
-#home-portfolio-director button {
-    border-color: var(--primary-color);
-    color: var(--primary-color);
-    width: 10em;
+#home-portfolio-director a {
+    width: 10rem;
     margin-left: 20px;
+    padding: 0.5rem;
+    border: 2px solid var(--primary-color);
+    border-radius: 8px;
+    color: var(--primary-color);
+    text-decoration: none;
+    text-align: center;
+    line-height: 2;
     transition: all 0.1s;
 }
-#home-portfolio-director button:hover {
+#home-portfolio-director a:hover {
     border-color: var(--accent1-color);
     color: var(--accent2-color);
     background-color: var(--accent1-color);
