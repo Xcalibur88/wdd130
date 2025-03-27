@@ -402,12 +402,13 @@ Portfolio Page
   color: var(--accent1-color);
   text-transform: uppercase;
   letter-spacing: 1px;
-  z-index: 1;
-  right: -200px;
+  z-index: 1;  
+}
+.timeline-container.left .timeline-date {
+    right: -200px;
 }
 .timeline-container.right .timeline-date {
-    right: 0;
-    left: -900px;
+    left: -200px;
 }
 
 .timeline-container .timeline-icon {
@@ -495,6 +496,7 @@ Portfolio Page
   .timeline-container.right .timeline-date {
     right: auto;
     left: 15px;
+    max-width: 40px;
   }
 
   .timeline-container.left .timeline-icon,
