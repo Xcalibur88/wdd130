@@ -48,7 +48,7 @@ header {
     padding-left: 20px;
     padding-right: 80px;
     box-shadow: 0 2px 10px 0 rgba(0,0,0, 0.2);
-    z-index: 1;
+    z-index: 2;
 }
 
 .highlighted {
@@ -311,4 +311,201 @@ footer a:hover {
     top: -10px;
     left: 25px;
     z-index: 1;
+}
+
+
+
+
+/*
+Portfolio Page
+*/
+.work-experience > h1 {
+    font-size: 4rem;
+    text-align: center;
+}
+
+.education > h1 {
+    font-size: 4rem;
+    text-align: center;
+}
+
+
+.timeline {
+  position: relative;
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 15px 0;
+}
+.timeline * {
+    box-sizing: border-box;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  background: var(--accent1-color);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -1px;
+}
+
+.timeline-container {
+  padding: 15px 30px;
+  position: relative;
+  background: inherit;
+  width: 50%;
+  left: 0;
+}
+.timeline-container.right {
+  left: 50%;
+}
+
+.timeline-container::after {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: calc(50% - 8px);
+  right: -10px;
+  background: var(--primary-color);
+  border: 2px solid var(--accent1-color);
+  border-radius: 16px;
+  z-index: 1;
+}
+.timeline-container.right::after {
+  left: -10px;
+}
+
+.timeline-container::before {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 2px;
+  top: calc(50% - 1px);
+  right: 8px;
+  background: var(--accent1-color);
+}
+.timeline-container.right::before {
+  left: 8px;
+}
+
+.timeline-container .timeline-date {
+  position: absolute;
+  display: inline-block;
+  top: calc(50% - 6px);
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--accent1-color);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  z-index: 1;
+  right: -200px;
+}
+.timeline-container.right .timeline-date {
+    right: 0;
+    left: -900px;
+}
+
+.timeline-container .timeline-icon {
+    grid-column: 2/3;
+    grid-row: 1/3;
+    width: 80px;
+    margin: auto 0;
+    z-index: 1;
+}
+.timeline-container.right .timeline-icon {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    margin-right: 15px;
+}
+
+.timeline-container .timeline-content {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    padding: 30px 50px 30px 20px;
+    background: var(--secondary-color);
+    position: relative;
+    border-style: none solid none none;
+    border-color: var(--accent1-color);
+    border-radius: 25px 500px 500px 25px;
+}
+.timeline-container.right .timeline-content {
+  padding: 30px 20px 30px 50px;
+  border-style: none none none solid;
+  border-radius: 500px 25px 25px 500px;
+}
+
+.timeline-container .timeline-content h3 {
+    grid-column: 1/2;
+    margin: 0 0 10px 0;
+    color: var(--accent1-color);
+}
+.timeline-container.right .timeline-content h3 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.timeline-container .timeline-content p {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    margin: 0;
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--accent2-color);
+}
+.timeline-container.right .timeline-content p {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: left;
+}
+
+
+@media (max-width: 767.98px) {
+  .timeline::after {
+    left: 90px;
+  }
+
+  .timeline-container {
+    width: 100%;
+    padding-left: 120px;
+    padding-right: 30px;
+  }
+
+  .timeline-container.right {
+    left: 0%;
+  }
+
+  .timeline-container.left::after, 
+  .timeline-container.right::after {
+    left: 82px;
+  }
+
+  .timeline-container.left::before,
+  .timeline-container.right::before {
+    left: 100px;
+    border-color: transparent #006E51 transparent transparent;
+  }
+
+  .timeline-container.left .timeline-date,
+  .timeline-container.right .timeline-date {
+    right: auto;
+    left: 15px;
+  }
+
+  .timeline-container.left .timeline-icon,
+  .timeline-container.right .timeline-icon {
+    right: auto;
+    left: 146px;
+  }
+
+  .timeline-container.left .timeline-content,
+  .timeline-container.right .timeline-content {
+    padding: 30px 30px 30px 90px;
+    border-radius: 500px 0 0 500px;
+  }
 }
