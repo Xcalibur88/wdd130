@@ -27,31 +27,13 @@
                 <p>Hi! My name is</p>
                 <h1 id="hero-name">
                     Elijah Lord.
-                </h1>
-                <script>
-                    document.addEventListener("DOMContentLoaded", () => {
-
-                        const hero_name = document.getElementById("hero-name");
-                        var org_txt = hero_name.innerHTML;
-                        console.log(org_txt);
-                        hero_name.innerHTML = "";
-                        var i = 0;
-                        function typeWriter() {
-                            if (i < org_txt.length) {
-                                hero_name.innerHTML += org_txt.charAt(i);
-                              i++;
-                              setTimeout(typeWriter, 50);
-                            }
-                        }
-                    typeWriter();
-                    });
-                </script>
+                </h1>               
                 <h1 id="hero-title">
                     Freelance Software Developer
                 </h1>
                 <p id="sub-title">*and student</p>
             </div>
-            <button>Resume</button>
+            <a class="button" href="resume-link-placeholder">Resume</a>
             <div class="down-arrow"></div>
         </div>
         <main class="home-grid">
@@ -62,7 +44,7 @@
                 <p>Fast forward to today and I am now a first-year Computer Science student with the privilege of working for an e-commerce company based out of Utah. When I’m not studying, my primary focus is on the development and maintenance of our backend ETL processes to deliver consolidated and accurate real-time data to our teams. Outside of work, I enjoy my personal projects and trying new technologies. I love learning and am always excited by the rapid progress we see in the computer space.</p>
                 <div id="home-portfolio-director">
                     <h2>What I've done</h2>
-                    <a href="portfolio.html">Portfolio</a>
+                    <a class="button" href="portfolio.html">Portfolio</a>
                 </div>
             </section>
         </main>
