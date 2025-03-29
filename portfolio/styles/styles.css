@@ -197,7 +197,6 @@ header {
 .about-me p:nth-of-type(2) {
     grid-column: 2/3;
     grid-row: 3;
-    
 }
 .profile-picture {
     grid-column: 2;
@@ -214,7 +213,6 @@ header {
     margin: 0 auto;
     width: 27em;
     height: 24em;
-
     border-radius: 10%;
     background-image: url(../images/example.jpeg);
     background-position: center;
@@ -344,8 +342,13 @@ Portfolio Page
     max-width: 520px;
     background: var(--secondary-color);
     border: solid 20px var(--secondary-color);
-    border-radius: 10px;
+    border-radius: 6px;
     margin: 15px;
+    transition: all 0.25s ease;
+}
+.technology:hover {
+    transform: translateY(-3%);
+    color: var(--accent1-color);
 }
 .technology > img {
     grid-column: 1/2;
@@ -353,12 +356,13 @@ Portfolio Page
     margin: auto 0;
 }
 .technology > h2 {
-    color: var(--accent2-color);
+    color: inherit;
     grid-column: 2/3;
     grid-row: 1/2;
     margin: 5px 0px 0px 20px;
 }
 .technology > p {
+    color: var(--accent2-color);
     grid-column: 2/3;
     grid-row: 2/3;
     margin: 5px 0px 0px 20px;

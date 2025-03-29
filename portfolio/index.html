@@ -9,9 +9,6 @@
     </head>
     <body>
         <header>
-            <!--<a href="index.html">
-                <img id="logo" src="images/logo.png" alt="logo">
-            </a>-->
             <div class="hexagon">
                 <div></div>
                 <p>E</p>
@@ -55,22 +52,5 @@
                 <p>Made with HTML, CSS, and love ❤️</p>
             </div>
         </footer>
-        <!--Type on script -->
-        <script>
-
-            const hero_name = document.getElementById("hero-name");
-            var org_txt = hero_name.innerHTML;
-            console.log(org_txt);
-            hero_name.innerHTML = "";
-            var i = 0;
-            function typeWriter() {
-                if (i < org_txt.length) {
-                    hero_name.innerHTML += org_txt.charAt(i);
-                  i++;
-                  setTimeout(typeWriter, 50);
-                }
-            }
-            typeWriter();
-        </script>
     </body>
 </html>
