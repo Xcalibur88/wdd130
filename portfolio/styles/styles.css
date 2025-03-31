@@ -510,6 +510,39 @@ Portfolio Page
 }
 
 
+
+
+/*
+Contact Me
+*/
+.contact-me-main {
+    max-width: 600px;
+    text-align: center;
+    margin: 100px auto;
+}
+.contact-me-main h4 {
+    margin: 0;
+}
+.contact-me-main h1 {
+    font-size: 4em;
+    margin: 0;
+}
+.contact-me-main p {
+    line-height: 180%;
+}
+.contact-me-main .button {
+    display: inline-block;
+    width: 280px;
+    margin-top: 45px;
+    border: 2px solid var(--accent1-color);
+    color: var(--accent1-color);
+}
+.contact-me-main .button:hover {
+    color: var(--accent2-color);
+}
+
+
+
 @media (max-width: 767.98px) {
   .timeline::after {
     left: 90px;
