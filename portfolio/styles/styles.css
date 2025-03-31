@@ -530,15 +530,26 @@ Contact Me
 .contact-me-main p {
     line-height: 180%;
 }
-.contact-me-main .button {
-    display: inline-block;
+.contact-me-main button {
     width: 280px;
     margin-top: 45px;
+    padding: 0.5rem;
     border: 2px solid var(--accent1-color);
     color: var(--accent1-color);
+    background-color: transparent;
+    border-radius: 8px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 2.1;
+    transition: all 0.1s;
 }
-.contact-me-main .button:hover {
+.contact-me-main button:hover {
+    border-color: var(--accent1-color);
     color: var(--accent2-color);
+    background-color: var(--accent1-color);
+    font-weight: bold;
+    cursor: pointer;
 }
 
 
