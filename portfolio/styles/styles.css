@@ -238,7 +238,6 @@ header {
 }
 
 
-
 footer {
     display: grid;
     grid-template-columns: .1fr .8fr .1fr;
@@ -262,7 +261,6 @@ footer a:hover {
     text-align: center;
     margin: 10px;
 }
-
 
 
 .hexagon {
