@@ -535,6 +535,10 @@ Contact Me
     border: 2px solid var(--accent1-color);
     color: var(--accent1-color);
     background-color: transparent;
+    background-image: url("../images/email.png");
+    background-position: 10% 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
     border-radius: 8px;
     text-decoration: none;
     text-align: center;
@@ -548,6 +552,10 @@ Contact Me
     background-color: var(--accent1-color);
     font-weight: bold;
     cursor: pointer;
+}
+
+button img {
+    max-width: 60px;
 }
 
 
